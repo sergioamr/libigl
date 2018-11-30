@@ -385,7 +385,11 @@ IGL_INLINE float ImGuiMenu::hidpi_scaling()
   // Computes scaling factor for hidpi devices
   float xscale, yscale;
   GLFWwindow* window = glfwGetCurrentContext();
-  glfwGetWindowContentScale(window, &xscale, &yscale);
+
+  //glfwGetWindowContentScale(window, &xscale, &yscale);
+  // TODO Update librealsense glfw to latest version
+  xscale = 1.0f;
+  yscale = 1.0f;
   return 0.5 * (xscale + yscale);
 }
 
