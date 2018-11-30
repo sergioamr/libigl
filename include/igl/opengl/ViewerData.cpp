@@ -26,7 +26,7 @@ IGL_INLINE igl::opengl::ViewerData::ViewerData()
   show_vertid(false),
   show_faceid(false),
   show_texture(false),
-  point_size(30),
+  point_size(1),
   line_width(0.5f),
   line_color(0,0,0,1),
   shininess(35.0f),
