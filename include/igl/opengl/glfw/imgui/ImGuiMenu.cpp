@@ -43,7 +43,7 @@ IGL_INLINE void ImGuiMenu::init(igl::opengl::glfw::Viewer *_viewer)
     ImGui_ImplOpenGL3_Init(glsl_version);
 
 	// We want our UI to save the interface options
-    //ImGui::GetIO().IniFilename = nullptr;
+    ImGui::GetIO().IniFilename = "imgui.ini";
     ImGui::StyleColorsDark();
     ImGuiStyle& style = ImGui::GetStyle();
     style.FrameRounding = 5.0f;
